@@ -1,0 +1,79 @@
+<!DOCTYPE>
+ <html>
+   <head>
+     <title>ManageMaid</title>
+     
+   </head>
+   
+   <body>
+     
+     <div id="head">
+       
+       <header>
+         <h1>ManageMaid</h1>
+       </header>
+       
+       <nav>
+         <div id="listswitch_buttons"></div>
+         <!--for switching between lists-->
+       </nav>
+       
+     </div>
+     
+     <div id="namelist">
+       
+       <p>To begin, name your list and choose the categories you'd like to remember.</p>
+       <fieldset>
+         <!--for naming and selecting list categories-->
+          <legend><h3>Create Your New List</h3></legend>
+         
+         <form id="listOptions">
+           
+          <label><!--possibly add label or keep a clean "googlelike" input box--></label>
+          <input id="listname" placeholder="Name your list">
+           
+          <div id="select">
+            
+            <label for="include_date">
+              <input type="checkbox" class="selectCata" name="selectCata" id="include_date">
+              Include Date
+            </label>
+            
+            <label for="include_time">
+              <input type="checkbox" class="selectCata" name="selectCata" id="include_time">
+              Include Time
+            </label>
+            
+            
+            <label for="include_details">
+              <input type="checkbox" class="selectCata" name="selectCata" id="include_details">
+              Include Details
+            </label>
+            
+            
+          </div>
+         </form>
+       </fieldset>
+     </div>
+     
+     <div class="list" id="list1">
+       <!--This is where the list will be created as user inputs. It will have only one row at first with the columns created by the users selection. More rows will be created in JS as the user adds items.-->
+       
+       <div id="listheader"></div>
+       
+       <div id="listbody"></div>
+       
+       <div id="listbody2"></div>
+       
+       <div id="listfooter"></div>
+       
+     </div>
+     
+     <footer>
+       <!--for footer title and UI -->
+       <h1>ManageMaid</h1>
+       <!--Add copyright info, date, etc. here-->
+     </footer>
+   </body>
+ </html>
+  
